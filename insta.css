@@ -1,0 +1,105 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo da caixa de login */
+.login-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+form input:nth-child(1)::placeholder{
+    color:red;
+}
+
+.login-box h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.login-box h1::selection {
+    color:rgb(248, 10, 177);;
+    background-color: rgb(46, 10, 248);
+}
+
+.login-box form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box form button:hover {
+    background-color: #0077e6;
+    box-shadow: 2px 2px 5px #929191;
+}
+
+.login-box form button:active{
+    background-color: #46f600;;
+}
+
+.separator {
+    margin: 20px 0;
+    position: relative;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    display: inline-block;
+    width: 45%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.separator::before {
+    left: 0;
+}
+
+.separator::after {
+    right: 0;
+}
+
+.login-box a {
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.login-box a:hover {
+    color: #0077e6;
+}
+
